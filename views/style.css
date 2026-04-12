@@ -1,17 +1,28 @@
-/* General page styling */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
 }
 
-/* Header */
-header {
+/* Navbar */
+.navbar {
   background: #4f46e5;
   color: white;
   padding: 15px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 /* Container */
@@ -24,24 +35,19 @@ header {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Links */
-a {
-  text-decoration: none;
-  color: #4f46e5;
-  font-weight: bold;
+/* Forms */
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Buttons */
 button {
   background: #4f46e5;
   color: white;
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -49,21 +55,62 @@ button:hover {
   background: #3730a3;
 }
 
-/* Form inputs */
-input {
-  width: 100%;
-  padding: 8px;
-  margin: 8px 0 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-/* Job list */
 .job {
-  border-bottom: 1px solid #ddd;
   padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.navbar {
+  background: #4f46e5;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.job:last-child {
-  border-bottom: none;
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.job {
+  border: 1px solid #e5e7eb;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.job h3 {
+  margin: 0 0 5px 0;
+}
+
+.job p {
+  margin: 3px 0;
+}
+
+.job a {
+  text-decoration: none;
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.job a:hover {
+  text-decoration: underline;
 }

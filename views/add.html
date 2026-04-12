@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Add Job</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Add Job</h1>
-</header>
+<div class="navbar">
+  <div>Job Portal</div>
+  <div>
+    <a href="/">Home</a>
+    <a href="/jobs">Jobs</a>
+  </div>
+</div>
 
 <div class="container">
+  <h2>Add New Job</h2>
+
   <form action="/add-job" method="POST">
     <label>Job Title</label>
     <input name="title" required>
@@ -21,11 +26,14 @@
     <label>Location</label>
     <input name="location" required>
 
-    <button type="submit">Add Job</button>
-  </form>
+    <label>Salary</label>
+    <input name="salary" required>
 
-  <br>
-  <a href="/">⬅ Back to Home</a>
+    <label>Description</label>
+    <textarea name="description" rows="4"></textarea>
+
+    <button>Add Job</button>
+  </form>
 </div>
 
 </body>
